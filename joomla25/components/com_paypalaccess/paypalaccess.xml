@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>PayPal Access</name>
+    <author>Yireo</author>
+    <authoremail>support@yireo.com</authoremail>
+    <authorurl>http://www.yireo.com</authorurl>
+    <creationDate>October 2011</creationDate>
+    <copyright>Copyright 2011 Yireo.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>0.1.3</version>
+    <description>This component integrates PayPal Access into Joomla!</description>
+
+    <files folder="components/com_paypalaccess">
+        <filename>index.html</filename>
+        <filename>paypalaccess.php</filename>
+        <filename>controller.php</filename>
+        <folder>helpers</folder>
+        <folder>models</folder>
+    </files>
+    
+    <!-- administration part -->
+    <administration>
+        <files folder="administrator/components/com_paypalaccess">
+            <filename>index.html</filename>
+            <filename>paypalaccess.php</filename>
+        </files>
+        <files>
+            <filename>paypalaccess.xml</filename>
+        </files>
+    </administration>
+</extension>

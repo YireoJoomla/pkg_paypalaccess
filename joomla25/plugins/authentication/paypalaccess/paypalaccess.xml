@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="authentication" method="upgrade">
+	<name>Authentication - PayPal Access</name>
+	<author>Yireo</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>Copyright (C) 2011 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>0.1.3</version>
+	<description>Handles user authentication for PayPal Access</description>
+	<files>
+		<filename plugin="paypalaccess">paypalaccess.php</filename>
+	</files>
+</extension>
