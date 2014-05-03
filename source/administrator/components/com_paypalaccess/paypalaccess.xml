@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+    <name>COM_PAYPALACCESS</name>
+    <author>Yireo</author>
+    <authoremail>support@yireo.com</authoremail>
+    <authorurl>http://www.yireo.com</authorurl>
+    <creationDate>May 2014</creationDate>
+    <copyright>Copyright (C) 2014 Yireo.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>0.2.1</version>
+    <description>COM_PAYPALACCESS_DESC</description>
+
+    <files folder="site">
+        <folder>helpers</folder>
+        <folder>lib</folder>
+        <folder>models</folder>
+        <filename>index.html</filename>
+        <filename>paypalaccess.php</filename>
+        <filename>controller.php</filename>
+    </files>
+    
+    <!-- administration part -->
+    <administration>
+
+        <menu img="../media/com_paypalaccess/images/menu-paypalaccess.png">COM_PAYPALACCESS</menu>
+
+        <files folder="admin">
+            <folder>helpers</folder>
+            <folder>lib</folder>
+            <folder>views</folder>
+            <filename>index.html</filename>
+            <filename>paypalaccess.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+        </files>
+
+        <languages folder="admin/language">
+            <language tag="en-GB">en-GB.com_paypalaccess.sys.ini</language>
+            <language tag="en-GB">en-GB.com_paypalaccess.ini</language>
+            <language tag="en-GB">en-GB.lib_yireo.ini</language>
+        </languages>
+
+    </administration>
+
+    <media folder="media" destination="com_paypalaccess">
+        <folder>css</folder>
+        <folder>images</folder>
+        <filename>index.html</filename>
+    </media>
+
+    <updateservers>
+        <server type="extension" priority="1" name="com_paypalaccess">http://www.yireo.com/updates/com_paypalaccess.xml</server>
+    </updateservers>
+</extension>

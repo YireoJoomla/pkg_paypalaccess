@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields>
+        <fieldset name="basic">
+            <field name="client_id" type="text" default="" label="COM_PAYPALACCESS_FIELD_CLIENT_ID" description="COM_PAYPALACCESS_FIELD_CLIENT_ID_DESC" size="64" />
+            <field name="client_secret" type="text" default="" label="COM_PAYPALACCESS_FIELD_CLIENT_SECRET" description="COM_PAYPALACCESS_FIELD_CLIENT_SECRET_DESC" size="64" />
+            <field name="autocreate_user" type="list" default="1" label="COM_PAYPALACCESS_FIELD_AUTOCREATE_USER" description="COM_PAYPALACCESS_FIELD_AUTOCREATE_USER_DESC">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="environment" type="list" default="live" label="COM_PAYPALACCESS_FIELD_ENVIRONMENT" description="COM_PAYPALACCESS_FIELD_ENVIRONMENT_DESC">
+                <option value="live">COM_PAYPALACCESS_FIELD_ENVIRONMENT_OPTION_LIVE</option>
+                <option value="sandbox">COM_PAYPALACCESS_FIELD_ENVIRONMENT_OPTION_SANDBOX</option>
+            </field>
+        </fieldset>
+    </fields>
+</config>

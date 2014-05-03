@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2.0" method="upgrade">
+    <name>MOD_PAYPALACCESS</name>
+    <author>Yireo</author>
+    <creationDate>January 2014</creationDate>
+    <copyright>Copyright (C) 2014 Yireo</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@yireo.com</authorEmail>
+    <authorUrl>http://www.yireo.com/</authorUrl>
+    <version>0.2.0</version>
+    <description>MOD_PAYPALACCESS_DESC</description>
+
+    <files folder="site">
+        <filename module="mod_paypalaccess">mod_paypalaccess.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <languages folder="site/language">
+        <language tag="en-GB">en-GB.mod_paypalaccess.ini</language>
+        <language tag="en-GB">en-GB.mod_paypalaccess.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="button" type="list" default="blue" label="Button" description="Button image">
+                    <option value="blue">Blue</option>
+                    <option value="grey">Grey</option>
+                </field>
+                <field name="linktype" type="list" default="form" label="Link type" description="Link-type for submissions">
+                    <option value="form">Form</option>
+                    <option value="anchor">Anchor</option>
+                </field>
+                <field name="debug" type="list" default="0" label="Debug" description="Show PayPal session-data in module">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+            <fieldset group="advanced">
+                <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+                <field name="cache" type="list" default="0" label="Caching">
+                    <option value="0">No caching</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
