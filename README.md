@@ -1,4 +1,5 @@
 PayPalAccess
 ============
+Homepage: http://www.yireo.com/software/joomla-extensions/paypal-access
 
-PayPal Access implementation for Joomla!
+This component/plugin offers a PayPal Access implementation for Joomla!
