@@ -63,7 +63,7 @@ class plgAuthenticationPaypalaccess extends JPlugin
         }
 
         // Complete authentication
-		$user = JUser::getInstance($row->id);
+		$user = JFactory::getUser($row->id);
         $response->email = $user->email;
         $response->fullname = $user->name;
 		$response->language = $user->getParam('language');
