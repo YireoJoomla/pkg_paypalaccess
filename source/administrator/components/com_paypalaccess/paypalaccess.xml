@@ -49,6 +49,6 @@
     </media>
 
     <updateservers>
-        <server type="extension" priority="1" name="com_paypalaccess">http://www.yireo.com/updates/com_paypalaccess.xml</server>
+        <server type="extension" priority="1" name="com_paypalaccess">https://www.yireo.com/updates/com_paypalaccess.xml</server>
     </updateservers>
 </extension>
